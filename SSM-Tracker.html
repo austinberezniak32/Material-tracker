@@ -1,0 +1,1207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#123568">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="SSM Track">
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<title>SSM Material Tracker</title>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+:root {
+  --ssm-blue: #1B4F8A; --ssm-blue-dark: #123568; --ssm-blue-light: #2E6DB4;
+  --ssm-blue-pale: #E8F0FA; --white: #FFFFFF; --gray-dark: #2E2E2E;
+  --gray-mid: #666; --gray-light: #E2E8F0; --gray-bg: #F0F4F8;
+  --red: #C0392B; --green: #1A7A3C; --orange: #D96000;
+}
+body { font-family: "Barlow", sans-serif; background: var(--gray-bg); color: var(--gray-dark); min-height: 100vh; min-height: -webkit-fill-available; }
+
+header { background: var(--ssm-blue-dark); padding: 0 16px; padding-top: env(safe-area-inset-top); display: flex; align-items: center; justify-content: space-between; height: 60px; border-bottom: 4px solid var(--ssm-blue-light); position: sticky; top: 0; z-index: 50; }
+.logo-block { display: flex; align-items: center; }
+.logo-ssm { font-family: "Barlow Condensed", sans-serif; font-weight: 800; font-size: 26px; color: var(--white); letter-spacing: 3px; }
+.logo-divider { width: 2px; height: 24px; background: var(--ssm-blue-light); margin: 0 12px; }
+.logo-title { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 15px; color: #93B8E0; letter-spacing: 1px; text-transform: uppercase; }
+.project-label { font-size: 11px; color: #93B8E0; text-transform: uppercase; letter-spacing: 1px; }
+
+nav { background: var(--ssm-blue); display: flex; padding: 0 8px; overflow-x: auto; scrollbar-width: none; position: sticky; top: 64px; z-index: 49; }
+nav::-webkit-scrollbar { display: none; }
+.tab { font-family: "Barlow Condensed", sans-serif; font-weight: 600; font-size: 13px; letter-spacing: 1px; text-transform: uppercase; padding: 10px 14px; color: #93B8E0; background: none; border: none; cursor: pointer; border-bottom: 3px solid transparent; white-space: nowrap; }
+.tab.active { color: var(--white); border-bottom: 3px solid var(--white); }
+.tab-badge { background: var(--red); color: var(--white); font-size: 10px; font-weight: 700; padding: 1px 5px; border-radius: 3px; margin-left: 4px; }
+
+main { padding: 16px; max-width: 1400px; margin: 0 auto; padding-bottom: 40px; }
+.view { display: none; }
+.view.active { display: block; }
+
+.status-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; margin-bottom: 20px; border: 2px solid var(--ssm-blue); }
+.status-card { background: var(--white); padding: 14px 10px; cursor: pointer; border-right: 1px solid var(--gray-light); text-align: center; }
+.status-card:nth-child(3n) { border-right: none; }
+.status-card:hover, .status-card:active { background: var(--ssm-blue-pale); }
+.status-card.active-filter { background: var(--ssm-blue); }
+.status-card.active-filter .sc-label { color: #93B8E0; }
+.status-card.active-filter .sc-value { color: var(--white); }
+.sc-label { font-family: "Barlow Condensed", sans-serif; font-size: 11px; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; color: var(--gray-mid); margin-bottom: 4px; }
+.sc-value { font-family: "Barlow Condensed", sans-serif; font-size: 36px; font-weight: 800; line-height: 1; color: var(--ssm-blue); }
+.sc-value.red { color: var(--red); } .sc-value.green { color: var(--green); } .sc-value.orange { color: var(--orange); }
+
+.toolbar { display: flex; gap: 8px; margin-bottom: 12px; flex-wrap: wrap; }
+.search-box, .filter-select { font-family: "Barlow", sans-serif; font-size: 14px; padding: 10px 12px; border: 2px solid var(--gray-light); background: var(--white); color: var(--gray-dark); outline: none; border-radius: 0; width: 100%; }
+.search-box:focus, .filter-select:focus { border-color: var(--ssm-blue); }
+.filter-row { display: flex; gap: 8px; width: 100%; }
+.filter-row .filter-select { flex: 1; }
+
+.btn { font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 14px; letter-spacing: 1px; text-transform: uppercase; padding: 11px 16px; border: none; cursor: pointer; white-space: nowrap; border-radius: 0; }
+.btn-primary { background: var(--ssm-blue); color: var(--white); }
+.btn-outline { background: var(--white); color: var(--ssm-blue); border: 2px solid var(--ssm-blue); }
+.btn-sm { padding: 7px 12px; font-size: 12px; }
+.btn-full { width: 100%; text-align: center; padding: 14px; font-size: 16px; }
+
+.table-wrap { overflow-x: auto; border: 2px solid var(--ssm-blue); background: var(--white); -webkit-overflow-scrolling: touch; }
+table { width: 100%; border-collapse: collapse; font-size: 13px; min-width: 700px; }
+thead { background: var(--ssm-blue); }
+th { font-family: "Barlow Condensed", sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--white); padding: 10px 12px; text-align: left; white-space: nowrap; }
+td { padding: 11px 12px; border-bottom: 1px solid var(--gray-light); vertical-align: middle; }
+tr:last-child td { border-bottom: none; }
+
+.badge { display: inline-block; font-family: "Barlow Condensed", sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 3px 7px; white-space: nowrap; }
+.b-delivered { background: #D4EDDA; color: var(--green); }
+.b-transit { background: var(--ssm-blue-pale); color: var(--ssm-blue); }
+.b-ordered { background: #FFF3CC; color: #8A6000; }
+.b-overdue { background: #FADDDA; color: var(--red); }
+.b-warehouse { background: #E8E0FF; color: #4A2080; }
+.b-installed { background: var(--gray-light); color: var(--gray-mid); }
+.b-partial { background: #FFE8CC; color: var(--orange); }
+
+.pri { display: inline-block; font-family: "Barlow Condensed", sans-serif; font-size: 11px; font-weight: 700; text-transform: uppercase; padding: 2px 6px; border-left: 3px solid transparent; }
+.pri-critical { border-left-color: var(--red); color: var(--red); background: #FADDDA; }
+.pri-high { border-left-color: var(--orange); color: var(--orange); background: #FFE8CC; }
+.pri-medium { border-left-color: var(--ssm-blue); color: var(--ssm-blue); background: var(--ssm-blue-pale); }
+.pri-low { border-left-color: var(--gray-mid); color: var(--gray-mid); background: var(--gray-light); }
+
+.prog-wrap { background: var(--gray-light); height: 6px; width: 60px; display: inline-block; vertical-align: middle; margin-left: 5px; }
+.prog-fill { height: 100%; }
+.prog-full { background: var(--green); } .prog-mid { background: var(--orange); } .prog-low { background: var(--red); }
+
+.section-hdr { display: flex; align-items: center; gap: 10px; margin-bottom: 14px; padding-bottom: 10px; border-bottom: 3px solid var(--ssm-blue); flex-wrap: wrap; }
+.section-hdr-title { font-family: "Barlow Condensed", sans-serif; font-weight: 800; font-size: 20px; text-transform: uppercase; letter-spacing: 2px; flex: 1; color: var(--ssm-blue-dark); }
+.blue-bar { width: 5px; height: 26px; background: var(--ssm-blue); flex-shrink: 0; }
+
+.modal-overlay { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.6); z-index: 200; align-items: flex-end; justify-content: center; padding: 0; }
+.modal-overlay.open { display: flex; }
+.modal { background: var(--white); border-top: 3px solid var(--ssm-blue); width: 100%; max-width: 600px; max-height: 92vh; overflow-y: auto; border-radius: 0; padding-bottom: env(safe-area-inset-bottom); }
+.modal-header { background: var(--ssm-blue-dark); padding: 14px 16px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; }
+.modal-title { font-family: "Barlow Condensed", sans-serif; font-size: 18px; font-weight: 800; letter-spacing: 2px; text-transform: uppercase; color: var(--white); }
+.modal-close { background: none; border: none; color: #93B8E0; font-size: 22px; cursor: pointer; padding: 0 4px; }
+.modal-body { padding: 16px; }
+.modal-footer { padding: 12px 16px; border-top: 2px solid var(--gray-light); display: flex; justify-content: flex-end; gap: 8px; background: var(--gray-bg); }
+
+.form-group { display: flex; flex-direction: column; gap: 5px; margin-bottom: 14px; }
+.form-label { font-family: "Barlow Condensed", sans-serif; font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gray-mid); }
+.form-input, .form-select, .form-textarea { font-family: "Barlow", sans-serif; font-size: 16px; padding: 11px 12px; border: 2px solid var(--gray-light); background: var(--white); color: var(--gray-dark); outline: none; border-radius: 0; width: 100%; }
+.form-input:focus, .form-select:focus, .form-textarea:focus { border-color: var(--ssm-blue); }
+.form-textarea { resize: vertical; min-height: 80px; }
+.form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+
+.alert-row { background: var(--white); border: 2px solid var(--gray-light); border-left: 6px solid var(--red); padding: 12px 14px; margin-bottom: 8px; display: flex; gap: 12px; }
+.alert-row.warn { border-left-color: var(--orange); }
+.alert-row.info { border-left-color: var(--ssm-blue); }
+.alert-icon { font-size: 20px; flex-shrink: 0; }
+.alert-msg { font-size: 13px; font-weight: 500; }
+.alert-time { font-size: 11px; color: var(--gray-mid); margin-top: 3px; }
+
+.lead-row { background: var(--white); border: 2px solid var(--gray-light); border-left: 5px solid var(--ssm-blue); padding: 12px 14px; margin-bottom: 6px; }
+.lead-row.critical { border-left-color: var(--red); }
+.lead-row.high { border-left-color: var(--orange); }
+.lead-top { display: flex; align-items: flex-start; justify-content: space-between; gap: 10px; margin-bottom: 8px; }
+.lead-name strong { font-size: 14px; font-weight: 600; display: block; }
+.lead-vendor { font-size: 12px; color: var(--gray-mid); margin-top: 2px; }
+.lead-weeks { font-family: "Barlow Condensed", sans-serif; font-size: 22px; font-weight: 800; color: var(--gray-mid); text-align: right; flex-shrink: 0; }
+.lead-weeks span { font-size: 11px; font-weight: 400; display: block; }
+.lead-bar-bg { background: var(--gray-light); height: 10px; position: relative; margin-bottom: 4px; }
+.lead-bar-fill { position: absolute; left: 0; top: 0; height: 100%; }
+.lead-dates { display: flex; justify-content: space-between; font-size: 11px; color: var(--gray-mid); }
+
+.wh-card { background: var(--white); border: 2px solid var(--gray-light); border-top: 4px solid var(--ssm-blue); padding: 14px; margin-bottom: 8px; }
+.wh-top { display: flex; align-items: center; gap: 12px; margin-bottom: 10px; }
+.wh-qty { font-family: "Barlow Condensed", sans-serif; font-size: 36px; font-weight: 800; color: var(--ssm-blue); flex-shrink: 0; line-height: 1; }
+.wh-qty small { font-size: 13px; display: block; color: var(--gray-mid); font-weight: 400; }
+.wh-info strong { font-size: 14px; font-weight: 600; display: block; margin-bottom: 3px; }
+.wh-info small { font-size: 12px; color: var(--gray-mid); }
+.wh-bay { font-family: "Barlow Condensed", sans-serif; font-size: 15px; font-weight: 700; color: var(--ssm-blue); text-transform: uppercase; margin-bottom: 10px; }
+.wh-actions { display: flex; align-items: center; justify-content: space-between; }
+
+.scan-zone { border: 3px dashed var(--ssm-blue); padding: 40px 20px; text-align: center; cursor: pointer; background: var(--white); margin-bottom: 16px; }
+.scan-icon { font-size: 56px; margin-bottom: 10px; }
+.scan-label { font-family: "Barlow Condensed", sans-serif; font-size: 22px; font-weight: 800; text-transform: uppercase; letter-spacing: 2px; color: var(--ssm-blue); }
+.scan-sub { font-size: 13px; color: var(--gray-mid); margin-top: 6px; }
+
+.ai-processing { background: var(--ssm-blue-pale); border: 2px solid var(--ssm-blue); padding: 30px 20px; text-align: center; margin-bottom: 16px; }
+.ai-spinner { font-size: 40px; animation: spin 1.2s linear infinite; display: inline-block; margin-bottom: 10px; }
+@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+.ai-status { font-family: "Barlow Condensed", sans-serif; font-size: 18px; font-weight: 700; color: var(--ssm-blue); text-transform: uppercase; letter-spacing: 1px; }
+
+.parsed-invoice { background: var(--white); border: 2px solid var(--ssm-blue); margin-bottom: 16px; }
+.parsed-header { background: var(--ssm-blue); color: var(--white); padding: 12px 14px; font-family: "Barlow Condensed", sans-serif; font-size: 15px; font-weight: 800; text-transform: uppercase; letter-spacing: 1px; display: flex; justify-content: space-between; align-items: center; }
+.parsed-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; padding: 14px; border-bottom: 1px solid var(--gray-light); }
+.pm-label { font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 1px; color: var(--gray-mid); margin-bottom: 2px; }
+.pm-val { font-size: 14px; font-weight: 600; }
+.parsed-line { display: flex; align-items: center; gap: 10px; padding: 10px 14px; border-bottom: 1px solid var(--gray-light); }
+.parsed-line:last-child { border-bottom: none; }
+.pl-check { width: 20px; height: 20px; accent-color: var(--ssm-blue); flex-shrink: 0; }
+.pl-desc { flex: 1; font-size: 13px; font-weight: 500; }
+.pl-pn { font-size: 11px; color: var(--gray-mid); font-family: monospace; }
+.pl-right { text-align: right; flex-shrink: 0; }
+.pl-qty { font-family: "Barlow Condensed", sans-serif; font-size: 16px; font-weight: 800; color: var(--ssm-blue); }
+.pl-cost { font-size: 11px; color: var(--gray-mid); }
+.parsed-actions { padding: 12px 14px; background: var(--gray-bg); display: flex; flex-direction: column; gap: 8px; }
+
+.file-input-wrap { display: none; }
+
+/* INVOICE CARDS */
+.inv-card { background: var(--white); border: 2px solid var(--gray-light); border-left: 5px solid var(--ssm-blue); margin-bottom: 10px; overflow: hidden; }
+.inv-card-header { display: flex; align-items: center; gap: 12px; padding: 12px 14px; cursor: pointer; user-select: none; }
+.inv-card-header:active { background: var(--ssm-blue-pale); }
+.inv-thumb { width: 52px; height: 52px; object-fit: cover; border: 1px solid var(--gray-light); flex-shrink: 0; background: var(--gray-light); display: flex; align-items: center; justify-content: center; font-size: 22px; }
+.inv-thumb img { width: 52px; height: 52px; object-fit: cover; display: block; cursor: pointer; }
+.inv-meta { flex: 1; min-width: 0; }
+.inv-title { font-family: "Barlow Condensed", sans-serif; font-size: 16px; font-weight: 800; color: var(--ssm-blue-dark); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.inv-sub { font-size: 12px; color: var(--gray-mid); margin-top: 2px; display: flex; flex-wrap: wrap; gap: 6px; }
+.inv-sub span { white-space: nowrap; }
+.inv-total { font-family: "Barlow Condensed", sans-serif; font-size: 18px; font-weight: 800; color: var(--ssm-blue); flex-shrink: 0; text-align: right; }
+.inv-total small { font-size: 11px; display: block; color: var(--gray-mid); font-weight: 400; }
+.inv-chevron { font-size: 16px; color: var(--gray-mid); flex-shrink: 0; transition: transform 0.2s; }
+.inv-card.open .inv-chevron { transform: rotate(90deg); }
+.inv-items { display: none; border-top: 1px solid var(--gray-light); }
+.inv-card.open .inv-items { display: block; }
+.inv-item-row { display: flex; align-items: center; gap: 10px; padding: 9px 14px; border-bottom: 1px solid var(--gray-light); font-size: 13px; }
+.inv-item-row:last-child { border-bottom: none; }
+.inv-item-pn { font-family: monospace; font-size: 11px; color: var(--gray-mid); flex-shrink: 0; width: 90px; }
+.inv-item-desc { flex: 1; }
+.inv-item-qty { font-family: "Barlow Condensed", sans-serif; font-size: 15px; font-weight: 700; color: var(--ssm-blue); white-space: nowrap; flex-shrink: 0; }
+.inv-item-cost { font-size: 12px; color: var(--gray-mid); flex-shrink: 0; white-space: nowrap; }
+
+/* LIGHTBOX */
+.lightbox { display: none; position: fixed; inset: 0; background: rgba(0,0,0,0.9); z-index: 500; align-items: center; justify-content: center; }
+.lightbox.open { display: flex; }
+.lightbox img { max-width: 95vw; max-height: 92vh; object-fit: contain; }
+.lightbox-close { position: absolute; top: 16px; right: 16px; background: none; border: none; color: white; font-size: 32px; cursor: pointer; }
+
+.empty-state { text-align: center; padding: 48px 20px; color: var(--gray-mid); }
+.empty-state .empty-icon { font-size: 48px; margin-bottom: 12px; }
+.empty-state p { font-size: 14px; margin-bottom: 16px; }
+
+.install-banner { background: var(--ssm-blue); color: var(--white); padding: 12px 16px; display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 13px; }
+.install-banner strong { display: block; font-size: 14px; }
+.install-banner button { background: var(--white); color: var(--ssm-blue); border: none; font-family: "Barlow Condensed", sans-serif; font-weight: 700; font-size: 13px; padding: 8px 14px; cursor: pointer; white-space: nowrap; }
+.install-banner .dismiss { background: none; color: #93B8E0; font-size: 18px; padding: 4px; }
+
+.toast-wrap { position: fixed; bottom: 24px; right: 16px; z-index: 999; display: flex; flex-direction: column; gap: 6px; }
+.toast { background: var(--ssm-blue-dark); color: var(--white); font-family: "Barlow Condensed", sans-serif; font-size: 15px; font-weight: 600; padding: 12px 16px; border-left: 4px solid var(--ssm-blue-light); animation: toastIn 0.25s ease; min-width: 220px; max-width: 300px; }
+.toast.err { border-left-color: var(--red); }
+@keyframes toastIn { from { transform: translateX(120%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
+</style>
+</head>
+<body>
+
+<!-- INSTALL BANNER -->
+<div class="install-banner" id="installBanner" style="display:none">
+  <div><strong>Add to Home Screen</strong>Tap share → "Add to Home Screen" to install</div>
+  <button class="dismiss" onclick="document.getElementById('installBanner').style.display='none'">✕</button>
+</div>
+
+<header>
+  <div class="logo-block">
+    <div class="logo-ssm">SSM</div>
+    <div class="logo-divider"></div>
+    <div class="logo-title">Material Tracker</div>
+  </div>
+  <div style="display:flex;align-items:center;gap:12px">
+    <div class="project-label">Material Test</div>
+    <button onclick="goTab('settings')" style="background:none;border:none;color:#93B8E0;font-size:22px;cursor:pointer;padding:4px" title="Settings">⚙️</button>
+  </div>
+</header>
+
+<nav>
+  <button class="tab active" onclick="goTab('dashboard')" data-tab="dashboard">Overview</button>
+  <button class="tab" onclick="goTab('field')" data-tab="field">Field</button>
+  <button class="tab" onclick="goTab('warehouse')" data-tab="warehouse">Warehouse <span class="tab-badge" id="whBadge">0</span></button>
+  <button class="tab" onclick="goTab('leadtimes')" data-tab="leadtimes">Lead Times</button>
+  <button class="tab" onclick="goTab('alerts')" data-tab="alerts">Alerts <span class="tab-badge" id="alertBadge">0</span></button>
+  <button class="tab" onclick="goTab('scan')" data-tab="scan">📷 Scan</button>
+  <button class="tab" onclick="goTab('settings')" data-tab="settings">⚙️</button>
+</nav>
+
+<main>
+
+<!-- OVERVIEW -->
+<div class="view active" id="view-dashboard">
+  <div class="status-grid">
+    <div class="status-card" onclick="setFilter('')"><div class="sc-label">Total</div><div class="sc-value" id="sv-total">0</div></div>
+    <div class="status-card" onclick="setFilter('Delivered')" id="sc-del"><div class="sc-label">Delivered</div><div class="sc-value green" id="sv-del">0</div></div>
+    <div class="status-card" onclick="setFilter('In Transit')" id="sc-tr"><div class="sc-label">Transit</div><div class="sc-value" id="sv-tr">0</div></div>
+    <div class="status-card" onclick="setFilter('Warehouse')" id="sc-wh"><div class="sc-label">Warehouse</div><div class="sc-value orange" id="sv-wh">0</div></div>
+    <div class="status-card" onclick="setFilter('Ordered')" id="sc-ord"><div class="sc-label">Ordered</div><div class="sc-value" id="sv-ord">0</div></div>
+    <div class="status-card" onclick="setFilter('Overdue')" id="sc-ov"><div class="sc-label">Overdue</div><div class="sc-value red" id="sv-ov">0</div></div>
+  </div>
+
+  <div class="toolbar">
+    <input class="search-box" type="text" placeholder="Search item, PO, vendor..." oninput="renderTable()" id="searchBox">
+    <div class="filter-row">
+      <select class="filter-select" onchange="renderTable()" id="fCat">
+        <option value="">All Categories</option>
+        <option>Mechanical</option><option>Electrical</option><option>Civil</option><option>IT/Network</option><option>Fire Protection</option><option>Other</option>
+      </select>
+      <select class="filter-select" onchange="renderTable()" id="fPri">
+        <option value="">All Priority</option><option>Critical</option><option>High</option><option>Medium</option><option>Low</option>
+      </select>
+    </div>
+    <div style="display:flex;gap:8px;width:100%">
+      <button class="btn btn-outline" style="flex:1" onclick="exportCSV()">↓ Export CSV</button>
+      <button class="btn btn-primary" style="flex:2" onclick="openModal('addItem')">+ Add Material</button>
+    </div>
+  </div>
+
+  <div id="dashEmpty" class="empty-state" style="display:none">
+    <div class="empty-icon">📦</div>
+    <p>No materials logged yet.<br>Tap "+ Add Material" or scan an invoice to get started.</p>
+    <button class="btn btn-primary btn-full" onclick="openModal('addItem')">+ Add First Item</button>
+  </div>
+  <div class="table-wrap" id="tableWrap">
+    <table>
+      <thead><tr><th>Pri</th><th>Description</th><th>PO #</th><th>Vendor</th><th>Cat</th><th>Ord</th><th>Rec'd</th><th>Status</th><th>Expected</th><th>Location</th><th></th></tr></thead>
+      <tbody id="mainTbody"></tbody>
+    </table>
+  </div>
+</div>
+
+<!-- RECEIVED INVOICES -->
+<div class="view" id="view-field">
+  <div class="section-hdr">
+    <div class="blue-bar"></div>
+    <div class="section-hdr-title">Received Invoices</div>
+    <button class="btn btn-primary btn-sm" onclick="goTab('scan')">📷 Scan</button>
+    <button class="btn btn-outline btn-sm" onclick="openModal('addDelivery')">+ Manual</button>
+  </div>
+  <div id="fieldEmpty" class="empty-state">
+    <div class="empty-icon">🧾</div>
+    <p>No invoices logged yet.<br>Scan a packing slip to get started.</p>
+    <button class="btn btn-primary btn-full" onclick="goTab('scan')">📷 Scan Invoice</button>
+  </div>
+  <div id="invoiceList"></div>
+</div>
+
+<!-- WAREHOUSE -->
+<div class="view" id="view-warehouse">
+  <div class="section-hdr">
+    <div class="blue-bar"></div>
+    <div class="section-hdr-title">Warehouse Receipts</div>
+    <button class="btn btn-primary btn-sm" onclick="openWarehouseScan()">📷 Scan</button>
+    <button class="btn btn-outline btn-sm" onclick="openModal('addWarehouse')">+ Manual</button>
+  </div>
+  <p style="color:var(--gray-mid);font-size:13px;margin-bottom:14px;">Field teams — check here before assuming material hasn't arrived. Tap any receipt to see line items.</p>
+  <div id="whEmpty" class="empty-state">
+    <div class="empty-icon">🏭</div>
+    <p>Nothing received at warehouse yet.<br>Snap a photo of the packing slip when FedEx drops off.</p>
+    <button class="btn btn-primary btn-full" onclick="openWarehouseScan()">📷 Scan Packing Slip</button>
+  </div>
+  <div id="whInvoiceList"></div>
+
+  <!-- Inline scan zone (hidden by default) -->
+  <div id="whScanZone" style="display:none;margin-top:16px">
+    <div class="section-hdr" style="margin-bottom:12px">
+      <div class="blue-bar"></div>
+      <div class="section-hdr-title" style="font-size:16px">Scan Incoming Packing Slip</div>
+      <button class="btn btn-outline btn-sm" onclick="closeWarehouseScan()">✕ Cancel</button>
+    </div>
+    <div class="scan-zone" onclick="document.getElementById('whFileInput').click()">
+      <div class="scan-icon">📷</div>
+      <div class="scan-label">Tap to Photograph</div>
+      <div class="scan-sub">AI reads vendor, PO, and every line item automatically</div>
+    </div>
+    <input type="file" id="whFileInput" class="file-input-wrap" accept="image/*" onchange="handleWarehouseUpload(event)">
+    <div id="whScanResult"></div>
+  </div>
+</div>
+
+<!-- LEAD TIMES -->
+<div class="view" id="view-leadtimes">
+  <div class="section-hdr">
+    <div class="blue-bar"></div>
+    <div class="section-hdr-title">Lead Times</div>
+    <button class="btn btn-primary btn-sm" onclick="openModal('addLeadtime')">+ Add</button>
+  </div>
+  <div id="ltEmpty" class="empty-state">
+    <div class="empty-icon">⏱️</div>
+    <p>No lead time items yet.<br>Add critical long-lead equipment to track delivery timelines.</p>
+    <button class="btn btn-primary btn-full" onclick="openModal('addLeadtime')">+ Add First Item</button>
+  </div>
+  <div id="ltList"></div>
+</div>
+
+<!-- ALERTS -->
+<div class="view" id="view-alerts">
+  <div class="section-hdr">
+    <div class="blue-bar"></div>
+    <div class="section-hdr-title">Alerts</div>
+    <button class="btn btn-outline btn-sm" onclick="clearAlerts()">Clear All</button>
+  </div>
+  <div id="alertList"><p style="color:var(--gray-mid);font-size:14px">No active alerts.</p></div>
+</div>
+
+<!-- SCAN -->
+<div class="view" id="view-scan">
+  <div class="section-hdr">
+    <div class="blue-bar"></div>
+    <div class="section-hdr-title">Upload Invoice</div>
+  </div>
+  <p style="color:var(--gray-mid);font-size:13px;margin-bottom:14px;">Take a photo with your camera app first, then upload it here. AI reads vendor, PO, every line item and quantity automatically.</p>
+  <div class="scan-zone" onclick="document.getElementById('fileInput').click()">
+    <div class="scan-icon">🖼️</div>
+    <div class="scan-label">Tap to Upload Photo</div>
+    <div class="scan-sub">Select from your camera roll — any invoice format works</div>
+  </div>
+  <input type="file" id="fileInput" class="file-input-wrap" accept="image/*" onchange="handleImageUpload(event)">
+  <div style="margin-bottom:16px">
+    <p style="font-size:13px;color:var(--gray-mid);margin-bottom:8px;">Or enter PO manually:</p>
+    <div style="display:flex;gap:8px;">
+      <input class="search-box" id="scanPO" type="text" placeholder="PO number..." style="flex:1">
+      <button class="btn btn-primary" onclick="lookupPO()">Look Up</button>
+    </div>
+  </div>
+  <div id="scanResult"></div>
+</div>
+
+<!-- SETTINGS -->
+<div class="view" id="view-settings">
+  <div class="section-hdr">
+    <div class="blue-bar"></div>
+    <div class="section-hdr-title">Settings</div>
+  </div>
+
+  <!-- API KEY -->
+  <div style="background:var(--white);border:2px solid var(--ssm-blue);padding:20px;margin-bottom:16px">
+    <div style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--ssm-blue-dark);margin-bottom:6px">Anthropic API Key</div>
+    <p style="font-size:13px;color:var(--gray-mid);margin-bottom:14px;line-height:1.5">Required for the AI invoice scanner to work. Get a free key at <strong>console.anthropic.com</strong> → API Keys → Create Key. Paste it below — it stays on this device only.</p>
+    <div id="keyStatus" style="margin-bottom:12px"></div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <input class="search-box" id="apiKeyInput" type="password" placeholder="sk-ant-..." style="flex:1;min-width:200px;font-family:monospace;font-size:13px">
+      <button class="btn btn-primary" onclick="saveApiKey()">Save Key</button>
+      <button class="btn btn-outline" onclick="clearApiKey()">Clear</button>
+    </div>
+    <p style="font-size:11px;color:var(--gray-mid);margin-top:10px">⚠ Each invoice scan costs fractions of a cent. A $5 credit lasts thousands of scans.</p>
+  </div>
+
+  <!-- HOW TO GET KEY -->
+  <div style="background:var(--ssm-blue-pale);border:2px solid var(--ssm-blue);padding:16px;margin-bottom:16px">
+    <div style="font-family:'Barlow Condensed',sans-serif;font-size:15px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--ssm-blue-dark);margin-bottom:10px">How to get your API key</div>
+    <div style="font-size:13px;line-height:1.8;color:var(--gray-dark)">
+      1. Go to <strong>console.anthropic.com</strong> on any browser<br>
+      2. Sign up for a free account<br>
+      3. Go to <strong>API Keys</strong> in the left menu<br>
+      4. Click <strong>Create Key</strong> — name it "SSM Tracker"<br>
+      5. Copy the key (starts with <code>sk-ant-</code>)<br>
+      6. Paste it in the field above and tap Save<br>
+      7. Add a payment method — minimum $5 credit, lasts a long time
+    </div>
+  </div>
+
+  <!-- PROJECT NAME -->
+  <div style="background:var(--white);border:2px solid var(--gray-light);padding:20px">
+    <div style="font-family:'Barlow Condensed',sans-serif;font-size:18px;font-weight:800;text-transform:uppercase;letter-spacing:1px;color:var(--ssm-blue-dark);margin-bottom:10px">Project Name</div>
+    <div style="display:flex;gap:8px">
+      <input class="search-box" id="projectNameInput" type="text" placeholder="e.g. UPMC Jameson" style="flex:1">
+      <button class="btn btn-primary" onclick="saveProjectName()">Save</button>
+    </div>
+  </div>
+</div>
+</main>
+
+<!-- MODALS -->
+<div class="modal-overlay" id="modal-addItem">
+  <div class="modal">
+    <div class="modal-header"><div class="modal-title">Log Material</div><button class="modal-close" onclick="closeModal('addItem')">✕</button></div>
+    <div class="modal-body">
+      <div class="form-group"><label class="form-label">Description *</label><input class="form-input" id="f-desc" type="text" placeholder="e.g. 4x20 SCH 80 PVC Pipe"></div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">PO Number *</label><input class="form-input" id="f-po" type="text" placeholder="H01460-193"></div>
+        <div class="form-group"><label class="form-label">Vendor</label><input class="form-input" id="f-vendor" type="text"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Category</label><select class="form-select" id="f-cat"><option>Mechanical</option><option>Electrical</option><option>Civil</option><option>IT/Network</option><option>Fire Protection</option><option>Other</option></select></div>
+        <div class="form-group"><label class="form-label">Priority</label><select class="form-select" id="f-pri"><option>Critical</option><option>High</option><option>Medium</option><option>Low</option></select></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Qty Ordered</label><input class="form-input" id="f-qty" type="number" value="1" inputmode="numeric"></div>
+        <div class="form-group"><label class="form-label">Unit Cost ($)</label><input class="form-input" id="f-cost" type="number" placeholder="0" inputmode="decimal"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Status</label><select class="form-select" id="f-status"><option>Ordered</option><option>In Transit</option><option>Warehouse</option><option>Partial</option><option>Delivered</option><option>Installed</option></select></div>
+        <div class="form-group"><label class="form-label">Expected Date</label><input class="form-input" id="f-date" type="date"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Location / Bay</label><input class="form-input" id="f-loc" type="text" placeholder="Bay 3"></div>
+        <div class="form-group"><label class="form-label">Alert if Overdue</label><select class="form-select" id="f-alert"><option value="yes">Yes</option><option value="no">No</option></select></div>
+      </div>
+      <div class="form-group"><label class="form-label">Notes</label><textarea class="form-textarea" id="f-notes" placeholder="Lead time, contact info, spec notes..."></textarea></div>
+    </div>
+    <div class="modal-footer"><button class="btn btn-outline" onclick="closeModal('addItem')">Cancel</button><button class="btn btn-primary" onclick="saveItem()">Save</button></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-addDelivery">
+  <div class="modal">
+    <div class="modal-header"><div class="modal-title">Log Delivery</div><button class="modal-close" onclick="closeModal('addDelivery')">✕</button></div>
+    <div class="modal-body">
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">PO Number</label><input class="form-input" id="d-po" type="text"></div>
+        <div class="form-group"><label class="form-label">Vendor</label><input class="form-input" id="d-vendor" type="text"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Description</label><input class="form-input" id="d-desc" type="text"></div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Qty Expected</label><input class="form-input" id="d-qe" type="number" value="1" inputmode="numeric"></div>
+        <div class="form-group"><label class="form-label">Qty Received</label><input class="form-input" id="d-qr" type="number" value="1" inputmode="numeric"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Condition</label><select class="form-select" id="d-cond"><option>Good</option><option>Damaged</option><option>Partial</option><option>Wrong Item</option></select></div>
+        <div class="form-group"><label class="form-label">Received By</label><input class="form-input" id="d-by" type="text" placeholder="Your name"></div>
+      </div>
+      <div class="form-group"><label class="form-label">Notes</label><textarea class="form-textarea" id="d-notes" placeholder="Damage, shortages, driver info..."></textarea></div>
+    </div>
+    <div class="modal-footer"><button class="btn btn-outline" onclick="closeModal('addDelivery')">Cancel</button><button class="btn btn-primary" onclick="saveDelivery()">Log Delivery</button></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-addWarehouse">
+  <div class="modal">
+    <div class="modal-header"><div class="modal-title">Warehouse Receipt</div><button class="modal-close" onclick="closeModal('addWarehouse')">✕</button></div>
+    <div class="modal-body">
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">PO Number</label><input class="form-input" id="w-po" type="text"></div>
+        <div class="form-group"><label class="form-label">Description</label><input class="form-input" id="w-desc" type="text"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Qty Available</label><input class="form-input" id="w-qty" type="number" value="1" inputmode="numeric"></div>
+        <div class="form-group"><label class="form-label">Bay / Location</label><input class="form-input" id="w-bay" type="text" placeholder="Bay 3, Shelf B"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Condition</label><select class="form-select" id="w-cond"><option>Good</option><option>Damaged</option><option>Partial</option></select></div>
+        <div class="form-group"><label class="form-label">Ready for Pickup?</label><select class="form-select" id="w-ready"><option value="yes">Yes</option><option value="no">No — Hold</option></select></div>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn btn-outline" onclick="closeModal('addWarehouse')">Cancel</button><button class="btn btn-primary" onclick="saveWarehouse()">Save</button></div>
+  </div>
+</div>
+
+<div class="modal-overlay" id="modal-addLeadtime">
+  <div class="modal">
+    <div class="modal-header"><div class="modal-title">Lead Time Item</div><button class="modal-close" onclick="closeModal('addLeadtime')">✕</button></div>
+    <div class="modal-body">
+      <div class="form-group"><label class="form-label">Equipment Description</label><input class="form-input" id="l-desc" type="text" placeholder="e.g. 3MW Diesel Generator Set"></div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Vendor</label><input class="form-input" id="l-vendor" type="text"></div>
+        <div class="form-group"><label class="form-label">PO Number</label><input class="form-input" id="l-po" type="text"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Order Date</label><input class="form-input" id="l-ordered" type="date"></div>
+        <div class="form-group"><label class="form-label">Expected Delivery</label><input class="form-input" id="l-expected" type="date"></div>
+      </div>
+      <div class="form-row">
+        <div class="form-group"><label class="form-label">Lead Time (weeks)</label><input class="form-input" id="l-weeks" type="number" placeholder="52" inputmode="numeric"></div>
+        <div class="form-group"><label class="form-label">Priority</label><select class="form-select" id="l-priority"><option>Critical</option><option>High</option><option>Medium</option></select></div>
+      </div>
+    </div>
+    <div class="modal-footer"><button class="btn btn-outline" onclick="closeModal('addLeadtime')">Cancel</button><button class="btn btn-primary" onclick="saveLeadtime()">Save</button></div>
+  </div>
+</div>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" onclick="closeLightbox()">
+  <button class="lightbox-close">✕</button>
+  <img id="lightboxImg" src="" alt="Invoice photo">
+</div>
+
+<div class="toast-wrap" id="toastWrap"></div>
+
+<script>
+let nid = 1, activeFilter = '';
+let materials = [], invoices = [], warehouse = [], leadtimes = [], alerts = [];
+
+// ── HELPERS ──
+function sBadge(s){const m={'Delivered':'b-delivered','In Transit':'b-transit','Ordered':'b-ordered','Overdue':'b-overdue','Warehouse':'b-warehouse','Installed':'b-installed','Partial':'b-partial'};return`<span class="badge ${m[s]||'b-ordered'}">${s}</span>`;}
+function pBadge(p){const m={'Critical':'pri-critical','High':'pri-high','Medium':'pri-medium','Low':'pri-low'};return`<span class="pri ${m[p]||'pri-low'}">${p}</span>`;}
+function prog(o,r){const pct=o>0?Math.min(100,Math.round(r/o*100)):0;const cls=pct>=100?'prog-full':pct>=50?'prog-mid':'prog-low';return`${r}<span class="prog-wrap"><span class="prog-fill ${cls}" style="width:${pct}%"></span></span>`;}
+function money(n){return'$'+Number(n).toLocaleString('en-US',{minimumFractionDigits:2,maximumFractionDigits:2});}
+function nowDT(){return new Date().toISOString().slice(0,16).replace('T',' ');}
+
+// ── SETTINGS ──
+function saveApiKey(){
+  const key=document.getElementById('apiKeyInput').value.trim();
+  if(!key){toast('Paste your API key first',true);return;}
+  localStorage.setItem('ssm_api_key',key);
+  renderKeyStatus();
+  toast('API key saved — scanner ready');
+}
+function clearApiKey(){
+  localStorage.removeItem('ssm_api_key');
+  document.getElementById('apiKeyInput').value='';
+  renderKeyStatus();
+  toast('API key cleared');
+}
+function saveProjectName(){
+  const name=document.getElementById('projectNameInput').value.trim();
+  if(!name)return;
+  localStorage.setItem('ssm_project_name',name);
+  toast('Project name saved');
+}
+function renderKeyStatus(){
+  const key=localStorage.getItem('ssm_api_key')||'';
+  const el=document.getElementById('keyStatus');
+  if(!el)return;
+  if(key){
+    el.innerHTML=`<div style="background:#D4EDDA;border:1px solid var(--green);padding:8px 12px;font-size:13px;color:var(--green);font-weight:600">✓ API key saved — scanner is active</div>`;
+    document.getElementById('apiKeyInput').value=key;
+  } else {
+    el.innerHTML=`<div style="background:#FADDDA;border:1px solid var(--red);padding:8px 12px;font-size:13px;color:var(--red);font-weight:600">⚠ No API key — scanner won't work until you add one</div>`;
+  }
+}
+function initSettings(){
+  renderKeyStatus();
+  const name=localStorage.getItem('ssm_project_name');
+  if(name){
+    const el=document.getElementById('projectNameInput');
+    if(el)el.value=name;
+  }
+}
+function goTab(t){
+  document.querySelectorAll('.tab').forEach(x=>x.classList.toggle('active',x.dataset.tab===t));
+  document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active',v.id==='view-'+t));
+  if(t==='settings')initSettings();
+}
+function openModal(n){document.getElementById('modal-'+n).classList.add('open');}
+function closeModal(n){document.getElementById('modal-'+n).classList.remove('open');}
+
+// ── FILTER ──
+function setFilter(val){
+  activeFilter=activeFilter===val?'':val;
+  document.querySelectorAll('.status-card').forEach(c=>c.classList.remove('active-filter'));
+  if(activeFilter){const m={'Delivered':'sc-del','In Transit':'sc-tr','Warehouse':'sc-wh','Ordered':'sc-ord','Overdue':'sc-ov'};if(m[activeFilter])document.getElementById(m[activeFilter])?.classList.add('active-filter');}
+  renderTable();
+}
+
+// ── STATS ──
+function renderStats(){
+  document.getElementById('sv-total').textContent=materials.length;
+  document.getElementById('sv-del').textContent=materials.filter(m=>m.status==='Delivered'||m.status==='Installed').length;
+  document.getElementById('sv-tr').textContent=materials.filter(m=>m.status==='In Transit').length;
+  document.getElementById('sv-wh').textContent=materials.filter(m=>m.status==='Warehouse').length;
+  document.getElementById('sv-ord').textContent=materials.filter(m=>m.status==='Ordered').length;
+  document.getElementById('sv-ov').textContent=materials.filter(m=>m.status==='Overdue').length;
+  document.getElementById('whBadge').textContent=whInvoices.filter(w=>w.ready==='yes').length;
+  document.getElementById('alertBadge').textContent=alerts.length;
+}
+
+// ── TABLE ──
+function renderTable(){
+  const search=(document.getElementById('searchBox')?.value||'').toLowerCase();
+  const cat=document.getElementById('fCat')?.value||'';
+  const pri=document.getElementById('fPri')?.value||'';
+  const data=materials.filter(m=>{
+    if(activeFilter&&m.status!==activeFilter&&!(activeFilter==='Delivered'&&m.status==='Installed'))return false;
+    if(search&&!m.desc.toLowerCase().includes(search)&&!m.po.toLowerCase().includes(search)&&!m.vendor.toLowerCase().includes(search))return false;
+    if(cat&&m.cat!==cat)return false;
+    if(pri&&m.pri!==pri)return false;
+    return true;
+  });
+  const empty=document.getElementById('dashEmpty');
+  const wrap=document.getElementById('tableWrap');
+  if(materials.length===0){empty.style.display='block';wrap.style.display='none';return;}
+  empty.style.display='none';wrap.style.display='block';
+  document.getElementById('mainTbody').innerHTML=data.map(m=>`<tr>
+    <td>${pBadge(m.pri)}</td>
+    <td><strong style="font-size:13px">${m.desc}</strong>${m.notes?`<br><span style="font-size:11px;color:var(--gray-mid)">${m.notes.substring(0,50)}${m.notes.length>50?'...':''}</span>`:''}</td>
+    <td style="font-size:12px;font-family:monospace">${m.po}</td>
+    <td style="font-size:13px">${m.vendor}</td>
+    <td style="font-size:12px">${m.cat}</td>
+    <td style="font-family:monospace">${m.qtyO}</td>
+    <td style="font-family:monospace">${prog(m.qtyO,m.qtyR)}</td>
+    <td>${sBadge(m.status)}</td>
+    <td style="font-size:12px;font-family:monospace;color:${m.status==='Overdue'?'var(--red)':'inherit'}">${m.expected||'—'}</td>
+    <td style="font-size:12px">${m.loc||'—'}</td>
+    <td style="white-space:nowrap">
+      <button class="btn btn-outline btn-sm" onclick="editItem(${m.id})">Edit</button>
+      <button class="btn btn-sm" style="background:var(--gray-light);color:var(--gray-mid);margin-left:4px" onclick="deleteItem(${m.id})">✕</button>
+    </td>
+  </tr>`).join('')||`<tr><td colspan="11" style="text-align:center;color:var(--gray-mid);padding:20px">No items match.</td></tr>`;
+}
+
+// ── INVOICES ──
+function renderField(){
+  const empty=document.getElementById('fieldEmpty');
+  const list=document.getElementById('invoiceList');
+  if(invoices.length===0){empty.style.display='block';list.innerHTML='';return;}
+  empty.style.display='none';
+  list.innerHTML=invoices.map(inv=>{
+    const thumbHtml = inv.thumb
+      ? `<img src="${inv.thumb}" alt="Invoice" onclick="openLightbox('${inv.thumb}');event.stopPropagation()">`
+      : '🧾';
+    const itemRows = (inv.lineItems||[]).map(item=>`
+      <div class="inv-item-row">
+        <div class="inv-item-pn">${item.partNumber||'—'}</div>
+        <div class="inv-item-desc">${item.description}</div>
+        <div class="inv-item-qty">${item.qty} <span style="font-size:11px;font-weight:400">${item.unit||'EA'}</span></div>
+        <div class="inv-item-cost">${money(item.lineTotal||0)}</div>
+      </div>`).join('');
+    return `
+      <div class="inv-card" id="inv-${inv.id}">
+        <div class="inv-card-header" onclick="toggleInvoice(${inv.id})">
+          <div class="inv-thumb">${thumbHtml}</div>
+          <div class="inv-meta">
+            <div class="inv-title">${inv.vendor} — #${inv.invoiceNumber||inv.id}</div>
+            <div class="inv-sub">
+              <span>PO: ${inv.customerPO||'—'}</span>
+              <span>📅 ${inv.invoiceDate||inv.dt}</span>
+              <span>👤 ${inv.by}</span>
+              ${inv.project?`<span>📍 ${inv.project}</span>`:''}
+            </div>
+          </div>
+          <div class="inv-total">${money(inv.total||0)}<small>${inv.lineItems?.length||0} items</small></div>
+          <div class="inv-chevron">▶</div>
+        </div>
+        <div class="inv-items">${itemRows}</div>
+      </div>`;
+  }).join('');
+}
+
+function toggleInvoice(id){
+  document.getElementById('inv-'+id)?.classList.toggle('open');
+}
+
+function openLightbox(src){
+  document.getElementById('lightboxImg').src=src;
+  document.getElementById('lightbox').classList.add('open');
+}
+function closeLightbox(){
+  document.getElementById('lightbox').classList.remove('open');
+}
+
+// ── WAREHOUSE ──
+let whInvoices = []; // warehouse-specific invoice receipts
+let _lastWhThumb = null;
+let _lastWhInvoice = null;
+
+function openWarehouseScan(){
+  document.getElementById('whScanZone').style.display='block';
+  document.getElementById('whScanZone').scrollIntoView({behavior:'smooth'});
+}
+function closeWarehouseScan(){
+  document.getElementById('whScanZone').style.display='none';
+  document.getElementById('whScanResult').innerHTML='';
+  _lastWhThumb=null; _lastWhInvoice=null;
+}
+
+function renderWarehouse(){
+  const empty=document.getElementById('whEmpty');
+  const list=document.getElementById('whInvoiceList');
+  if(whInvoices.length===0){empty.style.display='block';list.innerHTML='';return;}
+  empty.style.display='none';
+  list.innerHTML=whInvoices.map(inv=>{
+    const thumbHtml=inv.thumb
+      ?`<img src="${inv.thumb}" alt="Receipt" onclick="openLightbox('${inv.thumb}');event.stopPropagation()">`
+      :'🏭';
+    const itemRows=(inv.lineItems||[]).map(item=>`
+      <div class="inv-item-row">
+        <div class="inv-item-pn">${item.partNumber||'—'}</div>
+        <div class="inv-item-desc">${item.description}</div>
+        <div class="inv-item-qty">${item.qty} <span style="font-size:11px;font-weight:400">${item.unit||'EA'}</span></div>
+        <div class="inv-item-cost">${money(item.lineTotal||0)}</div>
+      </div>`).join('');
+    const readyBadge=inv.ready==='yes'
+      ?'<span class="badge b-delivered">✓ Ready for Pickup</span>'
+      :'<span class="badge b-ordered">On Hold</span>';
+    return`
+      <div class="inv-card" id="whinv-${inv.id}" style="border-left-color:var(--orange)">
+        <div class="inv-card-header" onclick="toggleWhInvoice(${inv.id})">
+          <div class="inv-thumb">${thumbHtml}</div>
+          <div class="inv-meta">
+            <div class="inv-title">${inv.vendor} — #${inv.invoiceNumber||inv.id}</div>
+            <div class="inv-sub">
+              <span>PO: ${inv.customerPO||'—'}</span>
+              <span>📅 ${inv.invoiceDate||inv.dt}</span>
+              <span>👤 ${inv.by}</span>
+              ${inv.bay?`<span>📦 ${inv.bay}</span>`:''}
+            </div>
+            <div style="margin-top:4px">${readyBadge}</div>
+          </div>
+          <div class="inv-total">${money(inv.total||0)}<small>${inv.lineItems?.length||0} items</small></div>
+          <div style="display:flex;flex-direction:column;gap:4px;align-items:flex-end;flex-shrink:0">
+            <div class="inv-chevron">▶</div>
+            <button class="btn btn-outline btn-sm" style="font-size:10px" onclick="markWhPickedUp(${inv.id});event.stopPropagation()">Picked Up</button>
+          </div>
+        </div>
+        <div class="inv-items">${itemRows}</div>
+      </div>`;
+  }).join('');
+}
+
+function toggleWhInvoice(id){
+  document.getElementById('whinv-'+id)?.classList.toggle('open');
+}
+
+function markWhPickedUp(id){
+  whInvoices=whInvoices.filter(w=>w.id!==id);
+  renderAll();toast('Marked as picked up');
+}
+
+async function handleWarehouseUpload(event){
+  const file=event.target.files[0];if(!file)return;
+  const res=document.getElementById('whScanResult');
+  res.innerHTML=`<div class="ai-processing"><div class="ai-spinner">⚙️</div><div class="ai-status">Reading packing slip...</div><div style="font-size:13px;color:var(--gray-mid);margin-top:6px">AI is extracting all line items</div></div>`;
+
+  const dataUrl=await new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(r.result);r.onerror=reject;r.readAsDataURL(file);});
+  _lastWhThumb=dataUrl;
+  const base64=dataUrl.split(',')[1];
+  const apiKey=localStorage.getItem('ssm_api_key')||'';
+  if(!apiKey){
+    res.innerHTML=`<div class="alert-row" style="border-left-color:var(--red)"><div class="alert-icon">⚠️</div><div><div class="alert-msg"><strong>No API key set.</strong> Go to Settings (gear icon) and paste your key first.</div></div></div>`;
+    event.target.value='';return;
+  }
+  const headers={
+    'Content-Type':'application/json',
+    'x-api-key':apiKey,
+    'anthropic-version':'2023-06-01',
+    'anthropic-dangerous-direct-browser-access':'true'
+  };
+
+  try{
+    const response=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers,body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1500,messages:[{role:'user',content:[{type:'image',source:{type:'base64',media_type:file.type||'image/jpeg',data:base64}},{type:'text',text:'You are reading a construction packing slip or invoice. Extract ALL information and respond ONLY with valid JSON, no markdown: {"vendor":"","invoiceNumber":"","invoiceDate":"YYYY-MM-DD","customerPO":"","project":"","total":0.00,"lineItems":[{"partNumber":"","description":"","unit":"","qty":0,"unitPrice":0.00,"lineTotal":0.00}]}'}]}]})});
+    const data=await response.json();
+    if(data.error)throw new Error(data.error.message||'API error');
+    const text=data.content.map(c=>c.text||'').join('');
+    _lastWhInvoice=JSON.parse(text.replace(/```json|```/g,'').trim());
+    showWhParsed(_lastWhInvoice);
+  }catch(err){
+    res.innerHTML=`<div class="alert-row" style="border-left-color:var(--orange)"><div class="alert-icon">⚠️</div><div><div class="alert-msg">Couldn't read automatically: ${err.message}</div><div class="alert-time">${apiKey?'':'No API key set.'}</div></div></div>${_lastWhThumb?`<img src="${_lastWhThumb}" style="width:100%;max-width:400px;margin-top:10px;border:2px solid var(--gray-light)">`:'' }`;
+  }
+  event.target.value='';
+}
+
+function showWhParsed(inv){
+  const thumbHtml=_lastWhThumb?`<img src="${_lastWhThumb}" style="width:64px;height:64px;object-fit:cover;border:2px solid var(--ssm-blue);flex-shrink:0" alt="Receipt">`:'' ;
+  const rows=(inv.lineItems||[]).map((item,i)=>`
+    <div class="parsed-line">
+      <input type="checkbox" class="pl-check" id="wchk-${i}" checked>
+      <div class="pl-desc"><div>${item.description||'Unknown'}</div><div class="pl-pn">${item.partNumber||''}</div></div>
+      <div class="pl-right"><div class="pl-qty">${item.qty} <span style="font-size:11px;font-weight:400">${item.unit||'EA'}</span></div><div class="pl-cost">${money(item.lineTotal||0)}</div></div>
+    </div>`).join('');
+  document.getElementById('whScanResult').innerHTML=`
+    <div class="parsed-invoice">
+      <div class="parsed-header"><span>✅ ${inv.lineItems?.length||0} items found</span><span style="font-size:13px;opacity:0.8">${money(inv.total||0)}</span></div>
+      <div style="display:flex;align-items:flex-start;gap:10px;padding:12px 14px;border-bottom:1px solid var(--gray-light)">
+        ${thumbHtml}
+        <div class="parsed-meta" style="flex:1;padding:0;border:none;gap:8px">
+          <div><div class="pm-label">Vendor</div><div class="pm-val">${inv.vendor||'—'}</div></div>
+          <div><div class="pm-label">Invoice #</div><div class="pm-val">${inv.invoiceNumber||'—'}</div></div>
+          <div><div class="pm-label">Date</div><div class="pm-val">${inv.invoiceDate||'—'}</div></div>
+          <div><div class="pm-label">Customer PO</div><div class="pm-val">${inv.customerPO||'—'}</div></div>
+          <div><div class="pm-label">Total</div><div class="pm-val" style="color:var(--ssm-blue)">${money(inv.total||0)}</div></div>
+        </div>
+      </div>
+      <div style="padding:8px 14px;background:var(--ssm-blue-pale);font-size:12px;color:var(--gray-mid)">Uncheck anything not in this shipment:</div>
+      <div>${rows}</div>
+      <div class="parsed-actions">
+        <input class="search-box" id="wh-recv-by" placeholder="Received by (your name)">
+        <input class="search-box" id="wh-bay" placeholder="Bay / shelf location (e.g. Bay 3)">
+        <select class="filter-select" id="wh-cond"><option>Good</option><option>Damaged</option><option>Partial</option></select>
+        <select class="filter-select" id="wh-ready"><option value="yes">Ready for Pickup</option><option value="no">On Hold</option></select>
+        <div style="display:flex;gap:8px">
+          <button class="btn btn-outline" style="flex:1" onclick="closeWarehouseScan()">Cancel</button>
+          <button class="btn btn-primary" style="flex:2" onclick="logWhInvoice()">✓ Log Receipt</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+function logWhInvoice(){
+  const inv=_lastWhInvoice;
+  if(!inv){toast('No invoice data',true);return;}
+  const by=document.getElementById('wh-recv-by').value||'Warehouse';
+  const bay=document.getElementById('wh-bay').value||'';
+  const cond=document.getElementById('wh-cond').value;
+  const ready=document.getElementById('wh-ready').value;
+  const selected=(inv.lineItems||[]).filter((_,i)=>{const c=document.getElementById('wchk-'+i);return c&&c.checked;});
+  if(selected.length===0){toast('No items selected',true);return;}
+  whInvoices.unshift({
+    id:nid++, dt:nowDT(),
+    vendor:inv.vendor||'Unknown',
+    invoiceNumber:inv.invoiceNumber||'—',
+    customerPO:inv.customerPO||'—',
+    invoiceDate:inv.invoiceDate||new Date().toISOString().slice(0,10),
+    total:inv.total||0,
+    by, bay, cond, ready,
+    thumb:_lastWhThumb||null,
+    lineItems:selected
+  });
+  // Update material status to Warehouse
+  const mat=materials.find(m=>m.po===inv.customerPO);
+  if(mat){mat.status='Warehouse';mat.loc=bay||mat.loc;}
+  alerts.push({id:nid++,type:'info',msg:`Warehouse receipt: ${inv.vendor} Invoice #${inv.invoiceNumber} — ${selected.length} items. ${bay?'Bay: '+bay+'.':''} Ready for pickup.`,time:'Just now'});
+  closeWarehouseScan();
+  renderAll();toast(selected.length+' items logged to warehouse');
+}
+
+// ── LEAD TIMES ──
+function renderLeadtimes(){
+  const empty=document.getElementById('ltEmpty');
+  const list=document.getElementById('ltList');
+  if(leadtimes.length===0){empty.style.display='block';list.innerHTML='';return;}
+  empty.style.display='none';
+  const today=new Date();
+  list.innerHTML=[...leadtimes].sort((a,b)=>new Date(a.expected)-new Date(b.expected)).map(l=>{
+    const exp=new Date(l.expected),ord=new Date(l.ordered);
+    const dLeft=Math.round((exp-today)/86400000);
+    const pct=Math.min(100,Math.max(0,Math.round((today-ord)/(exp-ord)*100)));
+    const color=dLeft<0?'var(--red)':dLeft<30?'var(--orange)':'var(--green)';
+    const dLabel=dLeft<0?`<span style="color:var(--red);font-weight:700">${Math.abs(dLeft)}d OVERDUE</span>`:`<span style="color:${color};font-weight:700">${dLeft}d left</span>`;
+    return`<div class="lead-row ${l.pri.toLowerCase()}">
+      <div class="lead-top">
+        <div class="lead-name">${pBadge(l.pri)}<strong style="margin-top:4px">${l.desc}</strong><div class="lead-vendor">${l.vendor} — ${l.po}</div></div>
+        <div class="lead-weeks">${l.weeks}<span>wks</span></div>
+      </div>
+      <div class="lead-bar-bg"><div class="lead-bar-fill" style="width:${pct}%;background:${color}"></div></div>
+      <div class="lead-dates"><span>${l.ordered}</span>${dLabel}<span>${l.expected}</span></div>
+    </div>`;
+  }).join('');
+}
+
+// ── ALERTS ──
+function renderAlerts(){
+  const icons={danger:'🚨',warn:'⚠️',info:'ℹ️'};
+  document.getElementById('alertList').innerHTML=alerts.length
+    ?alerts.map(a=>`<div class="alert-row ${a.type}"><div class="alert-icon">${icons[a.type]||'🔔'}</div><div><div class="alert-msg">${a.msg}</div><div class="alert-time">${a.time}</div></div></div>`).join('')
+    :`<p style="color:var(--gray-mid);font-size:14px">No active alerts.</p>`;
+}
+
+function renderAll(){renderStats();renderTable();renderField();renderWarehouse();renderLeadtimes();renderAlerts();}
+
+// ── SAVE ITEM ──
+function saveItem(){
+  const desc=document.getElementById('f-desc').value.trim(),po=document.getElementById('f-po').value.trim();
+  if(!desc||!po){toast('Description and PO # required',true);return;}
+  materials.push({id:nid++,desc,po,vendor:document.getElementById('f-vendor').value,cat:document.getElementById('f-cat').value,pri:document.getElementById('f-pri').value,qtyO:parseInt(document.getElementById('f-qty').value)||1,qtyR:0,status:document.getElementById('f-status').value,expected:document.getElementById('f-date').value,loc:document.getElementById('f-loc').value,alert:document.getElementById('f-alert').value,notes:document.getElementById('f-notes').value,cost:parseFloat(document.getElementById('f-cost').value)||0});
+  closeModal('addItem');
+  ['f-desc','f-po','f-vendor','f-qty','f-cost','f-date','f-loc','f-notes'].forEach(id=>document.getElementById(id).value='');
+  renderAll();toast('Material saved');
+}
+
+function editItem(id){
+  const m=materials.find(x=>x.id===id);if(!m)return;
+  document.getElementById('f-desc').value=m.desc;document.getElementById('f-po').value=m.po;document.getElementById('f-vendor').value=m.vendor;document.getElementById('f-cat').value=m.cat;document.getElementById('f-pri').value=m.pri;document.getElementById('f-qty').value=m.qtyO;document.getElementById('f-cost').value=m.cost;document.getElementById('f-status').value=m.status;document.getElementById('f-date').value=m.expected;document.getElementById('f-loc').value=m.loc;document.getElementById('f-alert').value=m.alert;document.getElementById('f-notes').value=m.notes;
+  materials=materials.filter(x=>x.id!==id);openModal('addItem');
+}
+
+function deleteItem(id){if(!confirm('Remove this item?'))return;materials=materials.filter(m=>m.id!==id);renderAll();toast('Item removed');}
+
+function saveDelivery(){
+  const po=document.getElementById('d-po').value;
+  const qr=parseInt(document.getElementById('d-qr').value)||1;
+  const desc=document.getElementById('d-desc').value;
+  invoices.unshift({
+    id:nid++, dt:nowDT(),
+    vendor:document.getElementById('d-vendor').value,
+    invoiceNumber: po,
+    customerPO: po,
+    invoiceDate: new Date().toISOString().slice(0,10),
+    project:'', total:0, by:document.getElementById('d-by').value||'Field',
+    cond:document.getElementById('d-cond').value,
+    thumb:null,
+    lineItems:[{partNumber:'',description:desc,unit:'EA',qty:qr,unitPrice:0,lineTotal:0}]
+  });
+  const mat=materials.find(m=>m.po===po);
+  if(mat){mat.qtyR+=qr;mat.status=mat.qtyR>=mat.qtyO?'Delivered':'Partial';}
+  closeModal('addDelivery');renderAll();toast('Delivery logged');
+}
+
+function saveWarehouse(){
+  const desc=document.getElementById('w-desc').value,po=document.getElementById('w-po').value;
+  const bay=document.getElementById('w-bay').value;
+  whInvoices.unshift({
+    id:nid++, dt:nowDT(),
+    vendor:document.getElementById('w-vendor')?document.getElementById('w-vendor').value:'',
+    invoiceNumber:po, customerPO:po,
+    invoiceDate:new Date().toISOString().slice(0,10),
+    total:0, by:'Warehouse', bay,
+    cond:document.getElementById('w-cond').value,
+    ready:document.getElementById('w-ready').value,
+    thumb:null,
+    lineItems:[{partNumber:'',description:desc,unit:'EA',qty:parseInt(document.getElementById('w-qty').value)||1,unitPrice:0,lineTotal:0}]
+  });
+  const mat=materials.find(m=>m.po===po);
+  if(mat){mat.status='Warehouse';mat.loc=bay||mat.loc;}
+  alerts.push({id:nid++,type:'info',msg:`Warehouse: ${desc||po} received — ready for pickup.`,time:'Just now'});
+  closeModal('addWarehouse');renderAll();toast('Warehouse receipt logged');
+}
+
+function saveLeadtime(){
+  leadtimes.push({id:nid++,desc:document.getElementById('l-desc').value,vendor:document.getElementById('l-vendor').value,po:document.getElementById('l-po').value,ordered:document.getElementById('l-ordered').value,expected:document.getElementById('l-expected').value,weeks:parseInt(document.getElementById('l-weeks').value)||0,pri:document.getElementById('l-priority').value});
+  closeModal('addLeadtime');renderAll();toast('Lead time item added');
+}
+
+function clearAlerts(){alerts=[];renderAll();}
+
+// ── PO LOOKUP ──
+function lookupPO(){
+  const po=document.getElementById('scanPO').value.trim().toUpperCase();
+  const mat=materials.find(m=>m.po.toUpperCase()===po);
+  const res=document.getElementById('scanResult');
+  if(!mat){res.innerHTML=`<div class="alert-row"><div class="alert-icon">⚠️</div><div><div class="alert-msg">PO <strong>${po}</strong> not found. Add it first or scan the invoice.</div></div></div>`;return;}
+  showConfirmUI(mat);
+}
+
+function showConfirmUI(mat){
+  document.getElementById('scanResult').innerHTML=`
+    <div style="background:var(--white);border:2px solid var(--ssm-blue);padding:16px">
+      <div style="font-family:'Barlow Condensed',sans-serif;font-size:17px;font-weight:800;text-transform:uppercase;color:var(--ssm-blue-dark);margin-bottom:12px;border-bottom:2px solid var(--ssm-blue);padding-bottom:8px">Verify Delivery</div>
+      <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-bottom:14px;font-size:13px">
+        <div><div class="pm-label">Item</div><strong>${mat.desc}</strong></div>
+        <div><div class="pm-label">Vendor</div>${mat.vendor}</div>
+        <div><div class="pm-label">PO #</div><code>${mat.po}</code></div>
+        <div><div class="pm-label">Status</div>${sBadge(mat.status)}</div>
+        <div><div class="pm-label">Qty Ordered</div><strong>${mat.qtyO}</strong></div>
+        <div><div class="pm-label">Received So Far</div><strong style="color:var(--green)">${mat.qtyR}</strong></div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:8px">
+        <div style="display:flex;gap:8px">
+          <input class="search-box" id="scan-qty" type="number" placeholder="Qty now" style="flex:1" value="1" inputmode="numeric">
+          <select class="filter-select" id="scan-cond" style="flex:1"><option>Good</option><option>Damaged</option><option>Partial</option></select>
+        </div>
+        <input class="search-box" id="scan-by" placeholder="Your name">
+        <button class="btn btn-primary btn-full" onclick="confirmScan(${mat.id})">✓ Confirm Receipt</button>
+      </div>
+    </div>`;
+}
+
+function confirmScan(id){
+  const mat=materials.find(m=>m.id===id);
+  const qty=parseInt(document.getElementById('scan-qty').value)||0;
+  const cond=document.getElementById('scan-cond').value;
+  const by=document.getElementById('scan-by').value||'Field';
+  mat.qtyR+=qty;mat.status=mat.qtyR>=mat.qtyO?'Delivered':'Partial';
+  invoices.unshift({
+    id:nid++, dt:nowDT(),
+    vendor:mat.vendor, invoiceNumber:mat.po,
+    customerPO:mat.po, invoiceDate:new Date().toISOString().slice(0,10),
+    project:'', total:0, by, cond, thumb:null,
+    lineItems:[{partNumber:'',description:mat.desc,unit:'EA',qty,unitPrice:0,lineTotal:0}]
+  });
+  document.getElementById('scanResult').innerHTML=`<div class="alert-row" style="border-left-color:var(--green)"><div class="alert-icon">✅</div><div><div class="alert-msg"><strong>${qty} units</strong> of ${mat.desc} confirmed. Status → <strong>${mat.status}</strong>.</div></div></div>`;
+  document.getElementById('scanPO').value='';
+  renderAll();toast('Receipt confirmed');
+}
+
+// ── AI SCAN ──
+let _lastScannedInvoice = null;
+let _lastScannedThumb = null;
+
+async function handleImageUpload(event){
+  const file=event.target.files[0];if(!file)return;
+  const res=document.getElementById('scanResult');
+  res.innerHTML=`<div class="ai-processing"><div class="ai-spinner">⚙️</div><div class="ai-status">Reading invoice...</div><div style="font-size:13px;color:var(--gray-mid);margin-top:6px">AI is extracting all line items</div></div>`;
+
+  // Capture full data URL for thumbnail storage
+  const dataUrl=await new Promise((resolve,reject)=>{const r=new FileReader();r.onload=()=>resolve(r.result);r.onerror=reject;r.readAsDataURL(file);});
+  _lastScannedThumb=dataUrl;
+  const base64=dataUrl.split(',')[1];
+
+  const apiKey=localStorage.getItem('ssm_api_key')||'';
+  if(!apiKey){
+    res.innerHTML=`<div class="alert-row" style="border-left-color:var(--red)"><div class="alert-icon">⚠️</div><div><div class="alert-msg"><strong>No API key set.</strong> Go to Settings (gear icon) and paste your key first.</div></div></div>`;
+    event.target.value='';return;
+  }
+  const headers={
+    'Content-Type':'application/json',
+    'x-api-key':apiKey,
+    'anthropic-version':'2023-06-01',
+    'anthropic-dangerous-direct-browser-access':'true'
+  };
+
+  try{
+    const response=await fetch('https://api.anthropic.com/v1/messages',{method:'POST',headers,body:JSON.stringify({model:'claude-sonnet-4-20250514',max_tokens:1500,messages:[{role:'user',content:[{type:'image',source:{type:'base64',media_type:file.type||'image/jpeg',data:base64}},{type:'text',text:'You are reading a construction packing slip or invoice. Extract ALL information and respond ONLY with valid JSON, no markdown: {"vendor":"","invoiceNumber":"","invoiceDate":"YYYY-MM-DD","customerPO":"","project":"","total":0.00,"lineItems":[{"partNumber":"","description":"","unit":"","qty":0,"unitPrice":0.00,"lineTotal":0.00}]}'}]}]})});
+    const data=await response.json();
+    if(data.error){throw new Error(data.error.message||'API error');}
+    const text=data.content.map(c=>c.text||'').join('');
+    const parsed=JSON.parse(text.replace(/```json|```/g,'').trim());
+    showParsedInvoice(parsed);
+  }catch(err){
+    // Show thumbnail even on failure so user can still log manually
+    res.innerHTML=`
+      <div class="alert-row" style="border-left-color:var(--orange)">
+        <div class="alert-icon">⚠️</div>
+        <div>
+          <div class="alert-msg">AI couldn't read the invoice: <em>${err.message}</em></div>
+          <div class="alert-time" style="margin-top:6px">
+            ${apiKey?'':'<strong>No API key set.</strong> Add one in settings or enter PO manually below.'}
+          </div>
+        </div>
+      </div>
+      ${_lastScannedThumb?`<img src="${_lastScannedThumb}" style="width:100%;max-width:400px;margin-top:10px;border:2px solid var(--gray-light)" alt="Captured invoice">`:'' }`;
+  }
+  event.target.value='';
+}
+
+function showParsedInvoice(inv){
+  _lastScannedInvoice=inv;
+  const thumbHtml=_lastScannedThumb
+    ?`<img src="${_lastScannedThumb}" style="width:72px;height:72px;object-fit:cover;border:2px solid var(--ssm-blue);margin-right:4px;flex-shrink:0" alt="Invoice photo">`
+    :'';
+  const rows=(inv.lineItems||[]).map((item,i)=>`
+    <div class="parsed-line">
+      <input type="checkbox" class="pl-check" id="chk-${i}" checked>
+      <div class="pl-desc"><div>${item.description||'Unknown'}</div><div class="pl-pn">${item.partNumber||''}</div></div>
+      <div class="pl-right"><div class="pl-qty">${item.qty} <span style="font-size:11px;font-weight:400">${item.unit||'EA'}</span></div><div class="pl-cost">${money(item.lineTotal||0)}</div></div>
+    </div>`).join('');
+  document.getElementById('scanResult').innerHTML=`
+    <div class="parsed-invoice">
+      <div class="parsed-header"><span>✅ ${inv.lineItems?.length||0} items found</span><span style="font-size:13px;opacity:0.8">${money(inv.total||0)}</span></div>
+      <div style="display:flex;align-items:flex-start;gap:10px;padding:12px 14px;border-bottom:1px solid var(--gray-light)">
+        ${thumbHtml}
+        <div class="parsed-meta" style="flex:1;padding:0;border:none;gap:8px">
+          <div><div class="pm-label">Vendor</div><div class="pm-val">${inv.vendor||'—'}</div></div>
+          <div><div class="pm-label">Invoice #</div><div class="pm-val">${inv.invoiceNumber||'—'}</div></div>
+          <div><div class="pm-label">Date</div><div class="pm-val">${inv.invoiceDate||'—'}</div></div>
+          <div><div class="pm-label">Customer PO</div><div class="pm-val">${inv.customerPO||'—'}</div></div>
+          <div><div class="pm-label">Project</div><div class="pm-val">${inv.project||'—'}</div></div>
+          <div><div class="pm-label">Total</div><div class="pm-val" style="color:var(--ssm-blue)">${money(inv.total||0)}</div></div>
+        </div>
+      </div>
+      <div style="padding:8px 14px;background:var(--ssm-blue-pale);font-size:12px;color:var(--gray-mid)">Uncheck anything not delivered:</div>
+      <div>${rows}</div>
+      <div class="parsed-actions">
+        <input class="search-box" id="recv-by" placeholder="Received by (your name)">
+        <select class="filter-select" id="recv-cond"><option>Good</option><option>Damaged</option><option>Partial</option></select>
+        <div style="display:flex;gap:8px">
+          <button class="btn btn-outline" style="flex:1" onclick="document.getElementById('scanResult').innerHTML=''">Cancel</button>
+          <button class="btn btn-primary" style="flex:2" onclick="logScannedInvoice()">✓ Log Items</button>
+        </div>
+      </div>
+    </div>`;
+}
+
+function logScannedInvoice(){
+  const inv=_lastScannedInvoice;
+  if(!inv){toast('No invoice data found',true);return;}
+  const by=document.getElementById('recv-by').value||'Field';
+  const cond=document.getElementById('recv-cond').value;
+
+  // Filter to only checked line items
+  const selectedItems=(inv.lineItems||[]).filter((_,i)=>{
+    const chk=document.getElementById('chk-'+i);return chk&&chk.checked;
+  });
+  if(selectedItems.length===0){toast('No items selected',true);return;}
+
+  // Push one invoice card with all selected line items + thumbnail
+  invoices.unshift({
+    id:nid++, dt:nowDT(),
+    vendor:inv.vendor||'Unknown',
+    invoiceNumber:inv.invoiceNumber||'—',
+    customerPO:inv.customerPO||'—',
+    invoiceDate:inv.invoiceDate||new Date().toISOString().slice(0,10),
+    project:inv.project||'',
+    total:inv.total||0,
+    by, cond,
+    thumb:_lastScannedThumb||null,
+    lineItems:selectedItems
+  });
+
+  // Update matching material status
+  const mat=materials.find(m=>m.po===inv.customerPO);
+  if(mat){
+    const totalQty=selectedItems.reduce((s,i)=>s+i.qty,0);
+    mat.qtyR=Math.min(mat.qtyO,mat.qtyR+totalQty);
+    mat.status=mat.qtyR>=mat.qtyO?'Delivered':'Partial';
+  }
+
+  alerts.push({id:nid++,type:'info',msg:`Invoice #${inv.invoiceNumber||'—'} — ${selectedItems.length} items from ${inv.vendor||'vendor'} logged. ${money(inv.total||0)}.`,time:'Just now'});
+  document.getElementById('scanResult').innerHTML=`<div class="alert-row" style="border-left-color:var(--green)"><div class="alert-icon">✅</div><div><div class="alert-msg"><strong>${selectedItems.length} items</strong> from ${inv.vendor} logged. See Received Invoices tab.</div></div></div>`;
+  _lastScannedInvoice=null;
+  _lastScannedThumb=null;
+  renderAll();toast(selectedItems.length+' items logged');
+}
+
+function exportCSV(){
+  const h=['Description','PO','Vendor','Category','Priority','Qty Ordered','Qty Received','Status','Expected','Location','Notes'];
+  const r=materials.map(m=>[m.desc,m.po,m.vendor,m.cat,m.pri,m.qtyO,m.qtyR,m.status,m.expected,m.loc,m.notes].map(v=>`"${String(v||'').replace(/"/g,'""')}"`));
+  const csv=[h.join(','),...r.map(x=>x.join(','))].join('\n');
+  const a=document.createElement('a');a.href='data:text/csv;charset=utf-8,'+encodeURIComponent(csv);a.download='ssm-materials.csv';a.click();
+  toast('CSV exported');
+}
+
+function toast(msg,err){
+  const w=document.getElementById('toastWrap');const t=document.createElement('div');
+  t.className='toast'+(err?' err':'');t.textContent=(err?'⚠ ':' ✓ ')+msg;
+  w.appendChild(t);setTimeout(()=>t.remove(),3500);
+}
+
+// ── PWA INSTALL ──
+let deferredPrompt;
+window.addEventListener('beforeinstallprompt',(e)=>{
+  e.preventDefault();deferredPrompt=e;
+  document.getElementById('installBanner').style.display='flex';
+});
+window.addEventListener('appinstalled',()=>{
+  document.getElementById('installBanner').style.display='none';
+  toast('App installed successfully!');
+});
+
+// Show iOS hint after 3 seconds if not already installed
+setTimeout(()=>{
+  const isIOS=/iphone|ipad|ipod/i.test(navigator.userAgent);
+  const isStandalone=window.navigator.standalone;
+  if(isIOS&&!isStandalone){
+    document.getElementById('installBanner').style.display='flex';
+  }
+},3000);
+
+// ── SERVICE WORKER (PWA offline) ──
+if('serviceWorker' in navigator){
+  const sw=`
+    const CACHE='ssm-tracker-v1';
+    self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(['.']))));
+    self.addEventListener('fetch',e=>e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).catch(()=>caches.match('.')))));
+  `;
+  const blob=new Blob([sw],{type:'application/javascript'});
+  navigator.serviceWorker.register(URL.createObjectURL(blob)).catch(()=>{});
+}
+
+renderAll();
+initSettings();
+</script>
+
+<!-- PWA MANIFEST -->
+<script>
+const manifestData = {
+  name: "SSM Material Tracker",
+  short_name: "SSM Track",
+  description: "SSM Industries Material Tracking",
+  start_url: ".",
+  display: "standalone",
+  background_color: "#123568",
+  theme_color: "#123568",
+  orientation: "portrait-primary",
+  icons: [
+    {src: "data:image/png;base64,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", sizes: "192x192", type: "image/png"},
+    {src: "data:image/png;base64,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AEIRAAAQigAAgFAEAACEIgAAIBQBAAChCAAACEUAAEAoAgAAQhEAABCKAACAUAQAAIQiAAAgFAEAAKEIAAAIRQAAQCgCAABCEQAAEIoAAIBQBAAAhCIAACAUAQAAoQgAAAhFAABAKAIAAEIRAAAQigAAgFAEAACEIgAAIBQBAAChCAAACEUAAEAoAgAAQhEAABCKAACAUAQAAIQiAAAglGvQyBut3gMAwAJ8BwAAQhEAABCKAACAUAQAAIQiAAAgFAEAAKEIAAAIRQAAQCgCAABCEQAAEIoAAIBQBAAAhCIAACAUAQAAoQgAAAhFAABAKAIAAEIRAAAQigAAgFAEAACEIgAAIBQBAAChCAAACEUAAEAoAgAAQhEAABCKAACAUAQAAIQiAAAgFAEAAKEIAAAIRQAAQCgCAABCEQAAEIoAAIBQBAAAhCIAACAUAQAAoQgAAAhFAABAKAIAAEIRAAAQigAAgFAEAACEIgAAIBQBAAChCAAACEUAAEAoAgAAQhEAABCKAACAUAQAAIQiAAAgFAEAAKEIAAAIRQAAQCgCAABCEQAAEIoAAIBQBAAAhCIAACAUAQAAoQgAAAj1//M2d+FfghLmAAAAAElFTkSuQmCC", sizes: "512x512", type: "image/png"}
+  ]
+};
+const manifestBlob = new Blob([JSON.stringify(manifestData)], {type: 'application/json'});
+const manifestURL = URL.createObjectURL(manifestBlob);
+const link = document.createElement('link');
+link.rel = 'manifest';
+link.href = manifestURL;
+document.head.appendChild(link);
+</script>
+</body>
+</html>
